@@ -16,4 +16,20 @@ public class Searching
         else
             return binarySearch(arr, target, middle + 1, right);
     }
+    public int linearSerach(int[] arr, int target)
+    {
+        int indexOfTarget = -1;
+        if (arr[0] == target)
+            return 0;
+
+        for (int i = 1; i < arr.Length; i++)
+        {
+            if (arr[i] == target)
+            {
+                indexOfTarget = i;
+                break;
+            }
+        }
+        return indexOfTarget;
+    }
 }

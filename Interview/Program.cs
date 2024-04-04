@@ -15,3 +15,4 @@ var sorted = new int[] { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19 };
 var target = 11;
 
 Console.WriteLine($"Index of {target} is :" + searching.binarySearch(sorted, target, 0, 9));
+Console.WriteLine($"Index of {target} is :" + searching.linearSerach(sorted, target));
