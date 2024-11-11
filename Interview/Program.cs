@@ -16,3 +16,16 @@ var target = 11;
 
 Console.WriteLine($"Index of {target} is :" + searching.binarySearch(sorted, target, 0, 9));
 Console.WriteLine($"Index of {target} is :" + searching.linearSerach(sorted, target));
+
+// palindrom example
+
+string Matn = "Appo";
+string Reversed = "";
+for (int i = Matn.Length - 1; i >= 0; i--)
+{
+    Reversed += Matn[i];
+}
+if (Reversed == Matn)
+    Console.WriteLine("Palindrome");
+else
+    Console.WriteLine("not Palindrome");
